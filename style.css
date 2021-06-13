@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
 
 * {
 	box-sizing: border-box;
@@ -20,21 +22,28 @@ img{
     background-image: url(images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: right;
     color: white;
     height: 80vh;
     margin-bottom: 0;
+    position: relative;
 }
 
 .logo{
-    margin-top: 1em;
-    margin-left: 1em;
+    margin: 0 auto 1em;
     max-width: 200px;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5em;
 }
 
 .navbar{
     margin: 0 1em;
+    padding-top: 1em;
     max-width: 1050px;
+}
+
+a{
+    cursor: pointer;
 }
 
 ul{
@@ -43,16 +52,18 @@ ul{
     margin: 0;
 }
 
+
 .menu li{
     display: inline-block;
-    margin: 1em;
+    margin: 0 1em;
 }
 
 .section-one{
     margin: 1em 1em;
-}
+   }
 
 .title{
+    margin-top: 1em;
     font-weight: 900;
     color: #FFF;
 }
@@ -74,23 +85,23 @@ ul{
 
 .button-one{
     margin-top: 2em;
-    color: #00ff6c;
-	border-color: #00ff6c;
+    color: #ff8303;
+	border-color: #ff8303;
 }
 
 .button-one:hover{
-    background-color: #00ff6c;
+    background-color: #ff8303;
     color: black;
 }
 
 .about{
-    background-color: #232323;
+    background-color: #f0e3ca;
     max-width: 480px;
     height: auto;
-    padding: 4em;
-    outline: 2px solid #00ff6c;
+    padding: 3em;
+    outline: 2px solid #ff8303;
 	outline-offset: -2em;
-    color: #FFF;
+    color: #1b1a17;
     position: relative;
 }
 
@@ -99,32 +110,40 @@ h1{
 }
 
 .about h2{
-    color: #00ff6c;
+    color: #ff8303;
+    padding: 0 0.5em;
     position: absolute;
+    top: -0.25em;
     left: 50%;
     transform: translateX(-50%);
-    top: -0.25em;
-    background-color: #232323;
-    padding: 0.14em;
+    background-color: #f0e3ca;
+    
+}
+
+.about p{
+    font-size: 0.9em;
 }
 
 .line{
-    margin: 1em 0 0.75em;
     position: relative;
+    margin-bottom: 1.5em;
 }
 
 .line::before{
     content: '';
     width: 8em;
-    background-color: #00ff6c;
-    border: 1.5px solid #00ff6c;
+    background-color: #ff8303;
+    border: 1.5px solid #ff8303;
     position: absolute;
-    top: -0.35em;
+    top: 1.35em;
     left: 50%;
     transform: translateX(-50%);
 
 }
 
+.content-three{
+    margin-top: 2em;
+}
 
 .port-item {
 	margin: 0;
@@ -153,20 +172,21 @@ h1{
 .button-small {
 	font-size: .7rem;
 	font-weight: 700;
-	color: #00ff6c;
-	border-color: #00ff6c;
+	color: #f0e3ca;
+	border-color: #f0e3ca;
 
 }
 
 .button-small:hover{
-	background: #00ff6c;
+	background: #f0e3ca;
 	color: #232323;
 }
 
 
 .content-four{
-    background-color: #00ff6c;
+    background-color: #ff8303;
     padding: 4em 1em;
+    max-width: 1200px;
 }
 
 .content-four h1{
@@ -180,7 +200,7 @@ h1{
 
 .button-dark:hover{
 	background: #232323;
-	color: #00ff6c;
+	color: #ff8303;
 }
 
 .footer {
@@ -189,6 +209,11 @@ h1{
 	text-align: left;
     padding: 2em 0;
 }
+
+.f-logo{
+    margin-left: 0 !important;
+}
+
 .col-3{
     margin-top: 0;
     display: block;
@@ -216,6 +241,10 @@ h1{
 
 @media (min-width: 30em) {
 
+    .content-two{
+        margin: 2em 0 2em;
+    }
+
     .portfolio{
         display: grid;
         grid-template-columns: repeat(2,auto);
@@ -225,12 +254,13 @@ h1{
         margin-top: 0em;
     }
 
-    .who-we-are{
+    .about-us{
         background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(images/sec-two.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        max-width: 1100px;
+        max-width: 1200px;
+        height: 400px;
         margin: auto;
     }
 
@@ -239,6 +269,7 @@ h1{
         margin-left: -0.5em;
 
     }
+
 }
 
 
@@ -248,31 +279,52 @@ h1{
         font-size: 18px;
     }
 
+    .logo{
+        margin: 0 0 0 1em;
+    }
+
     .navbar{
         display: flex;
         justify-content: space-between;
-        margin: auto;
+        margin: 0 auto;
     }
 
-    .menu{
-        padding-top: 1em;
-    }
-
-    .content-one{
-        height: 450px;
-    }
-    
-    .section-one{
-        margin-top: 2em;
+    .title{
+        margin-top: 0;
     }
 
     .button-one{
         margin: 1em 0;
     }
 
+    .content-one{
+        position: relative;
+    }
+
+    .section-one{
+        margin-top: 2em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+    }
+
+    .content-three{
+        max-width: 1200px;
+        margin: 0 auto 1em;
+    }
+
     .portfolio{
         display: grid;
         grid-template-columns: repeat(3,auto);
+    }
+
+    .port-item{
+        margin: 0.15em;
+    }
+
+    .content-four{
+    margin: 0 auto 1em;
     }
 
     .footer{
