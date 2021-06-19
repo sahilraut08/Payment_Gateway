@@ -257,7 +257,7 @@ h1{
     }
 
     .about-us{
-        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(images/sec-two.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),url(images/sec-two.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
